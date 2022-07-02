@@ -2,7 +2,7 @@
 # Time : O(nm)
 # Space : O(n+m)
 
-class Solution:
+class Solution1:
     def setZeroes(self, matrix: list[list[int]]) -> None:
 
         m, n = len(matrix), len(matrix[0])
