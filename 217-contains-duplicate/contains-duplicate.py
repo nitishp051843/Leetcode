@@ -1,78 +1,8 @@
-f = open('user.out', 'w')
-print('''true
-false
-true
-false
-false
-true
-false
-false
-true
-true
-true
-false
-true
-true
-true
-true
-true
-false
-false
-true
-false
-false
-false
-false
-false
-false
-false
-true
-false
-false
-false
-true
-false
-false
-false
-false
-true
-false
-true
-false
-true
-false
-false
-false
-true
-false
-true
-true
-true
-true
-true
-false
-true
-true
-true
-true
-true
-true
-true
-true
-true
-true
-true
-true
-true
-false
-true
-true
-true
-false
-false
-true
-true
-false
-true
-''',file=f)
-exit(0)
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        distinct_nums = set()
+        for i in nums:
+            if i in distinct_nums:
+                return True
+            distinct_nums.add(i)
+        return False
